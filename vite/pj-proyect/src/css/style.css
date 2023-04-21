@@ -1,0 +1,630 @@
+:root {
+  /* colores*/
+  --bitcoin-orange:#F7931A;
+  --soft-orange:#FFE9D4;
+  --secundary-blue:#1A9AF7;
+  --soft-blue:#E7F5FF;
+  --warm-black:#201E1C;
+  --black:#282623;
+  --grey:#BABABA;
+  --off-white:#FAF8F7;
+  --just-white:#FFFFFF;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 62.5%;
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+/*Estilo del logo*/
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+/*Estilos en div que es contenedor texto*/
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.header--title-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.header--title-container p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+.header--title-container .header--button{
+  position: absolute;
+  left: 0;                    
+  right: 0;                    
+  margin-right: auto;         
+  margin-left: auto;          
+  top: 275px;
+  display: block;
+  padding: 15px;
+  margin-top: 35px;
+  width: 225px;
+  height: 45px;
+  background-color: var(--off-white);
+  /*Sombras*/
+  box-shadow: 0px 4px 8px rgba(89, 73, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black)  ;
+}
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 8px;
+}
+
+
+main {
+  width:100% ;
+  height: auto;
+  background-color: var(--off-white);
+
+}
+
+.main-exchange-container {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-exchange-container-title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;        /*centrar el texto en el centro*/
+} 
+
+.backgroundimg{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+
+.main-exchange-container h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.main-exchange-container p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+/*Estiloo scrooll*/
+.main-tables-container {
+  display: flex;
+  height: 360px;
+  min-width: 320px;
+  gap: 10px;
+  overflow-x: scroll;     /*da la opcion para subir en caso de mas contenido*/
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+/*Estilo en las tablas*/
+.main-currency-table {
+  /*Parte scroll*/
+  position: relative;
+  scroll-snap-align: center;
+
+
+  /*final scroll*/
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif
+}
+/*Estilo del titulo*/
+.main-currency-table .currency-table-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+.currency-table-container {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+.currency-table-container table {
+  width: 100%;
+  height: 100%;
+}
+
+.currency-table-container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--just-white);
+
+}
+.currency-table-container .table__top-left {
+  border-radius: 15px 0 0 0 ;
+}
+.currency-table-container .table__top-right {
+  border-radius: 0 15px  0 0;
+}
+.currency-table-container .table__bottom-left {
+  border-radius:  0 0 0 15px;
+}
+.currency-table-container .table__bottom-right {
+  border-radius:  0 0 15px 0;
+}
+.currency-table-container .table__right {
+  font-size: 1.4rem;
+  font-weight: normal;
+  list-style: 1.7rem;
+  color: #757575;
+}
+.down {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+.up {
+  display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.currency-table--date {
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top:  15px;
+  padding:  8px;
+  background-color: var(--soft-orange);
+  border-radius: 5px;
+}
+.currency-table--date p {
+  
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: var(--black);
+}
+
+/*Tabla de comisiones*/
+.main-commissions-table {
+  /*Parte scroll*/
+  position: relative;
+  scroll-snap-align: center;
+
+
+  /*final scroll*/
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif
+}
+.main-commissions-table .commissions-table-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--secundary-blue);
+}
+.commissions-table-container {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.commissions-table-container table {
+  width: 100%;
+  height: 100%;
+}
+.commissions-table-container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--just-white);
+}
+
+.commissions-table-container .tablecomi__top-left {
+  border-radius: 15px 0 0 0 ;
+}
+.commissions-table-container .tablecomi__top-right {
+  border-radius: 0 15px  0 0 ;
+}
+.commissions-table-container .tablecomi__bottom-left {
+  border-radius: 0 0 0 15px ;
+}
+.commissions-table-container .tablecomi__bottom-right {
+  border-radius: 0 0 15px 0;
+}
+
+.commissions-table--date {
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top:  15px;
+  padding:  8px;
+  background-color: var(--soft-blue);
+  border-radius: 5px;
+}
+.commissions-table--date p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: var(--warm-black);
+}
+/*Secion de cards*/
+
+.main-product-datail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding:  20px 10px;
+  background-color:var(--warm-black);   /*fondo contenedor*/
+  font-family: 'DM Sans', sans-serif  ;
+}
+.product-detail--batata-logo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top:  -10px;
+  left: 50%;
+}
+
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.product-detail--title p {
+  margin-bottom:  20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+/*Contenedor 1*/
+.product-detail--card {
+  width: 90%;
+  /*min-width: 288px;*/
+  max-width: 400px;
+  height:150px ;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black) ;  /*fondo hijos contenedor*/
+  border-radius: 5px;
+  box-shadow:  0 4px 8px rgba(0 , 0, 0 , 0.16);
+}
+.product-detail--card .icon--card {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom:  10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  list-style: 1.8rem;
+  color: #808080;
+}
+
+/*tercera secion*/
+.bitcoin-img-container {
+  width:100% ;
+  min-width: 320px;
+  height: 60vh;
+  background-image: url("./assets/img/bitcoinbaby2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-family:'DM Sans', sans-serif  ;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--just-white);
+}
+
+/*Cuarta seccion*/
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+/*Estilo titulo*/
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin:  0 auto;
+  margin-bottom: 50px;
+  
+}
+/*Estilo subtitulo*/
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+/*Estilo parrafo*/
+.plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+/*Estilo de las tarjetas*/
+
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+/*prueba de scroll */
+.plans-container--slider::-webkit-scrollbar {
+  
+  width: 8px;
+  height: 8px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb{
+  background-color: var(--bitcoin-orange);
+  border-radius: 4px;   
+}
+.plans-container--slider::-webkit-scrollbar-thumb:hover{
+  background: var(--bitcoin-orange);
+  box-shadow: 0 0 2px 1 px rgba(0 , 0, 0 , 0.2);
+}
+.plans-container--slider::-webkit-scrollbar-thumb:active{
+  background-color:  var(--bitcoin-orange);
+}
+.plans-container--slider::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+.plans-container--slider::-webkit-scrollbar-track:hover,
+.plans-container--slider::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+/*TARJETA Recomendado*/
+.plans-container--card1 {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;  /*Poner mejor 190px */
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;   /*Poner mejor 248px*/
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: #AFEEEE;
+  border-radius: 15px; /*mejor 8px*/
+  box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
+}
+/*TARJETA 2*/
+.plans-container--card2 {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;  /*Poner mejor 190px */
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;   /*Poner mejor 248px*/
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: #4938b9c5;
+  border-radius: 15px; /*mejor 8px*/
+  box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
+
+}
+/*TARJETA 3*/
+.plans-container--card3 {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;  /*Poner mejor 190px */
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;   /*Poner mejor 248px*/
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: #F08080;
+  border-radius: 15px; /*mejor 8px*/
+  box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
+}
+.recomendado {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  top: -15px;
+  right: 0;
+  left:0; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--just-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  font-family: 'Inter';
+
+}
+
+.plan-card--title {
+  padding-top: 30px;
+  font-family: 'DM Sans';
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+.plan-card--price {
+  padding:  15px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: black;
+
+}
+.plan-card--price span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  vertical-align: top;
+  
+  font-weight: 300;
+  
+}
+/*SUBTITULO CONTENEDOR 1*/
+.plan-card--saving1 {
+  font-size: 1.2rem;
+  color: #757575;
+}
+/*SUBTITULOCONTENEDOR 2*/
+.plan-card--saving2 {
+  font-size: 1.2rem;
+  color: white;
+}
+/*SUBTITULOCONTENEDOR 2*/
+.plan-card--saving3 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.plan-card--ca {
+  width: 151px;
+  height: 48px;
+  margin-top: 20px;
+  background-color:var(--off-white) ;
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  border: 2px solid var(--bitcoin-orange);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.plan-card--ca span {
+  display: inline-block;
+  width:20px ;
+  height: 20px; 
+  background-image: url(./assets/icons/orange-right-arrow.svg);
+  vertical-align: text-top;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  min-width: 320px;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+.left li {
+  margin: 10px 0;
+}
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
+}
